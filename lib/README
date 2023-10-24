@@ -1,0 +1,37 @@
+Restaurant Review System with SQLAlchemy
+This project is a simple restaurant review system implemented using SQLAlchemy, a popular Object Relational Mapping (ORM) library for Python. It features three main models: Restaurant, Customer, and Review, and allows users to interact with these models to manage restaurant reviews.
+
+Getting Started
+Prerequisites
+To run this project, you'll need:
+
+Python installed on your machine.
+
+SQLAlchemy library installed. You can install it using pip:
+A SQLite database named restaurants.db (the database file name can be configured in the code) in the same directory as the project files.
+
+Running the Application
+To interact with the restaurant review system, you can use a Python script and create instances of Restaurant, Customer, and Review as needed. The main code for the models and relationships is provided in the Python script.
+
+Models
+Restaurant
+Represents a restaurant with attributes like name and price.
+Stores reviews left by customers.
+Has a many-to-many relationship with Customer.
+Customer
+Represents a customer with first_name and last_name.
+Can leave reviews for restaurants.
+Has a many-to-many relationship with Restaurant.
+Review
+Represents a review left by a customer for a restaurant.
+Contains a star rating.
+Belongs to both a Restaurant and a Customer.
+Methods and Features
+The project includes several methods and features:
+
+Object Relationship Methods for accessing relationships between models.
+Aggregate and Relationship Methods for advanced functionality.
+For example, you can find the fanciest restaurant, the favorite restaurant for a customer, add and delete reviews, and more.
+
+Acknowledgments
+This project is a simple example of using SQLAlchemy to create a restaurant review system. It can be expanded and customized to fit more complex use cases.
